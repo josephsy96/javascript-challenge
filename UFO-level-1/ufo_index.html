@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="Stylesheets/css/UFO.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            
+
+            <title>
+                UFO Sightings | Home
+            </title>
+        </head>
+        <!-- Home Page contents -->
+        <body>
+        <!-- Navigation Bar -->
+            <header>
+                <nav class="navbar navbar-expand-sm bg-light">
+                    <span class="navbar-brand ml" id="nav-brand">
+                        <img src="Logo/Shop.png" alt="UFO Site Logo" width="60" class="mx-1">
+                        UFO Sightings...
+                    </span>   
+                </nav>
+            </header>
+        <!-- Landing Content -->
+        <div class="img">
+            <div class="hero text-center">
+                <h1 id="lol">UFO Sightings Data</h1>
+                <p id="snarky">Snarky Comment Goes Here.</p>
+            </div>
+        </div>
+        <!-- Filter Box -->
+            <div class="container">
+                <div class="row margin-top-50">
+                    <div class="col-sm-3">
+                        <aside class="filters">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <ul class="list-group" id="filters">
+                                                <li class="filter list-group-item mt-3">
+                                                    <label for="date">Enter a Date</label>
+                                                    <input class="form-control" id="datetime" type="text" placeholder="1/11/2018">
+                                                        <button id="filter-btn" type="button" class="btn btn-outline-light mb-3 mt-3">Filter</button>
+                                                </li>
+                                            </ul>
+
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="table-area">
+                            <table id="ufo-table"class="ufo-data table table-responsive table-dark">
+                                <thead>
+                                    <tr>
+                                        <th class="table-head">Date</th>
+                                        <th class="table-head">City</th>
+                                        <th class="table-head">State</th>
+                                        <th class="table-head">Country</th>
+                                        <th class="table-head">Shape</th>
+                                        <th class="table-head">Duration</th>
+                                        <th class="table-head">Comments</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <div class="footer">
+                    <a class="foot">
+                        @Copyright Joseph Yi
+                    </a>
+                </div>
+            </div>
+        <!-- Import JavaScript Code -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> 
+            <script src="js/data.js"></script>
+            <script src="js/custom_ufo.js"></script>
+        </body>
+    </html>

@@ -2,9 +2,6 @@
 var tableData = data;
 
 
-//====================================
-//Appending data into html
-
 //For the filter button 
 var filter_button = d3.select("#filter-btn");
 
@@ -36,10 +33,14 @@ filter_button.on("click", function() {
                         Object.entries(fitlered).forEach(([key,value]) => {
                             var new_ufo_cell = new_ufo_row.append("td");
                             new_ufo_cell.text(value);
+                            
                         });
                     });
     return work_filter;   
 });
+
+
+
 
 
 

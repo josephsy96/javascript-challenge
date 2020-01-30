@@ -39,6 +39,11 @@ body {
     color: black !important;
 }
 
+.nav-link {
+  font-size: 25px;
+  color: black !important;
+}
+
 /*
 ====================================
 2. Filter
@@ -125,6 +130,9 @@ html {
   @include media-breakpoint-up(sm) {
     html {
       font-size: 1.2rem;
+    }
+    #lol {
+      font-size: 20px;
     }
   }
   

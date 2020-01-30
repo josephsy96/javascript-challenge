@@ -1,0 +1,149 @@
+/*
+====================================
+Author: Joseph Yi
+Assignment: UFO Sightings Homework
+Date: 01.25.2020
+
+Table of Contents:
+1. Navigation Bar
+
+2.Filter
+
+3.Landing Content
+
+4.Media Query
+
+====================================
+*/
+
+body {
+    position: relative;
+    font-family: "Oswald", sans-serif !important;
+    background: url('star_wars.jpg');
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: 0 -6200px 100px 100px black inset; */
+    background-color: black !important;
+}
+
+/*
+====================================
+1. Navigation Bar
+====================================
+*/
+
+#nav-brand {
+    font-size: 30px;
+    color: black !important;
+}
+
+.nav-link {
+  font-size: 25px;
+  color: black;
+}
+
+/*
+====================================
+2. Filter
+====================================
+*/
+
+aside {
+    position: relative;
+    margin-left: 0em !important;
+}
+
+.filter {
+    background-color: #121E1E !important;
+}
+
+label {
+    color: white !important;
+}
+
+.form-control {
+    background-color: #434D57 !important;
+    border-color: white !important;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+input::placeholder {
+    color: white !important;
+}
+
+.form-control:focus, input:focus {  
+    color: #fff; 
+}
+
+/*
+====================================
+3. Landing Content
+====================================
+*/
+
+#lol {
+    font-size: 70px;
+    margin-top: 3em;
+    color: white !important;
+}
+
+#snarky {
+    font-size: 30px;
+    margin-bottom: 3em;
+    color: white !important;
+}
+
+.footer {
+    margin-top: 150px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    min-height: 50px;
+    width: 100%;
+    color: white !important;
+    background-color: #121E1E;
+    padding: 10px;
+}
+
+.ufo-data {
+  background-color: #121E1E !important;
+}
+
+/*
+====================================
+4. Media Query
+====================================
+*/
+
+
+
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+    #lol {
+      font-size: 20px;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }

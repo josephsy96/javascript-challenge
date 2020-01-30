@@ -19,7 +19,7 @@ Table of Contents:
 body {
     position: relative;
     font-family: "Oswald", sans-serif !important;
-    background: url('nasa.jpg');
+    background: url('Galaxy.jpg');
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
@@ -51,7 +51,7 @@ aside {
 }
 
 .filter {
-    background-color: black !important;
+    background-color: #121E1E !important;
 }
 
 label {
@@ -59,7 +59,7 @@ label {
 }
 
 .form-control {
-    background-color: gray !important;
+    background-color: #434D57 !important;
     border-color: white !important;
 }
 
@@ -102,8 +102,12 @@ input::placeholder {
     min-height: 50px;
     width: 100%;
     color: white !important;
-    background-color: #2A2D2D;
+    background-color: #121E1E;
     padding: 10px;
+}
+
+.ufo-data {
+  background-color: #121E1E !important;
 }
 
 /*

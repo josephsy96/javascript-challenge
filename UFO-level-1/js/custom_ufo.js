@@ -32,8 +32,7 @@ filter_button.on("click", function() {
                         var new_ufo_row = date_filter.append("tr");
                         Object.entries(fitlered).forEach(([key,value]) => {
                             var new_ufo_cell = new_ufo_row.append("td");
-                            new_ufo_cell.text(value);
-                            
+                            new_ufo_cell.text(value);  
                         });
                     });
     return work_filter;   
@@ -62,4 +61,3 @@ filter_button.on("click", function() {
 //         ufo_cell.text(value);
 //     });
 // });
-

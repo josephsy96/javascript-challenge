@@ -6,37 +6,41 @@ var tableData = data;
 var filter_button = d3.select("#filter-btn");
 
 //Filter Function
-filter_button.on("click", function() {
 
-    //Select the Date element for the input box
-    var input_filter = d3.select("#datetime");
+    filter_button.on("click", function() {
 
-    //Value for the input element in the html file
-    var date_value = input_filter.property("value");
+        //Select the Date element for the input box
+        var input_filter = d3.select("#datetime");
 
-    //Log date value and table data
-    console.log(date_value);
-    console.log(tableData);
+        //Value for the input element in the html file
+        var date_value = input_filter.property("value");
 
-    var filter_dates = tableData.filter(d_data => d_data.datetime === date_value);
+        //Log date value and table data
+        console.log(date_value);
+        console.log(tableData);
 
-    console.log(filter_dates);
-    
-    var date_pull = filter_dates.map(ufo_pull => ufo_pull);
+        var filter_dates = tableData.filter(d_data => d_data.datetime === date_value);
 
-    var date_filter = d3.select("tbody");
+        console.log(filter_dates);
+        
+        var date_pull = filter_dates.map(ufo_pull => ufo_pull);
+
+        var date_filter = d3.select("tbody");
 
 
-    //Appends filtered data.js to the table html
-    var work_filter = date_pull.forEach((fitlered) => {
-                        var new_ufo_row = date_filter.append("tr");
-                        Object.entries(fitlered).forEach(([key,value]) => {
-                            var new_ufo_cell = new_ufo_row.append("td");
-                            new_ufo_cell.text(value);  
+        //Appends filtered data.js to the table html
+        var work_filter = date_pull.forEach((fitlered) => {
+                            var new_ufo_row = date_filter.append("tr");
+                            Object.entries(fitlered).forEach(([key,value]) => {
+                                var new_ufo_cell = new_ufo_row.append("td");
+                                new_ufo_cell.text(value);  
+                            });
                         });
-                    });
-    return work_filter;   
-});
+        
+        return work_filter;   
+
+    }); 
+
 
 
 

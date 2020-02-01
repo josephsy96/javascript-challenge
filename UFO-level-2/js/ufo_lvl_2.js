@@ -22,3 +22,21 @@ filter_button.on("click", function() {
     
 
 });
+
+
+
+$(document).ready(function(){
+    for( index in ufo_table.city ) {
+        $("#city-dropdown").append('.dropdown-item');
+    }
+});
+
+let city_select = d3.select("#city-dropdown");
+
+ufo_table.forEach((city) => {
+    let city_item = city_select.append("a");
+    Object.defineProperties(city).forEach(([key,value]) => {
+        let city_cell = city_item.append("a");
+        city_cell.text(value);
+    });
+});

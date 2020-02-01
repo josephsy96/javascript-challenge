@@ -1,6 +1,15 @@
 // from data.js
 var tableData = data;
 
+var ufo_tbody = d3.select("tbody");
+
+data.forEach((ufo_data) => {
+    var ufo_row = ufo_tbody.append("tr");
+    Object.entries(ufo_data).forEach(([key,value]) => {
+        var ufo_cell = ufo_row.append("td");
+        ufo_cell.text(value);
+    });
+});
 
 //For the filter button 
 var filter_button = d3.select("#filter-btn");
@@ -27,6 +36,8 @@ var filter_button = d3.select("#filter-btn");
 
         var date_filter = d3.select("tbody");
 
+        //refresh the data
+        date_filter.html(" ")
 
         //Appends filtered data.js to the table html
         var work_filter = date_pull.forEach((fitlered) => {

@@ -41,7 +41,7 @@
             </div>
             <div class="container">
                 <div class="row margin-top-30">
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <aside class="filters">
                             <div class="panel panel-default">
                                 <div class="panel-body">
@@ -55,7 +55,10 @@
                                                     <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="btn-group">
-                                                                <button id="city-dropdown" type="button" class="btn btn-outline-light dropdown-toggle mb-1">City</button>
+                                                                <button id="city-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-outline-light dropdown-toggle mb-1">City</button>
+                                                                <div class="dropdown-menu" aria-labelledby="city-dropdown">
+                                                                    <a id="city-drop" class="dropdown-item"></a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
